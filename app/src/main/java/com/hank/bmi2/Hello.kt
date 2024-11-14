@@ -5,7 +5,7 @@ class Hello {
 }
 
 fun main() {
-    val p = Person("Jack",65.5f,1.7f)
+    val p = Person("Jack123",65.5f,1.7f)
     p.hello()
     println(p.bmi())
     val hank = Person("Hank",70f,1.75f)
@@ -14,10 +14,16 @@ fun main() {
     println("${hank.name}\t${hank.bmi()}")
     println(Mary.idd)
 
+    println(p.name.nameLength())
+
 //    bmiTest()
 //    println("Hello Kotlin!")
 //    dataType()
 
+}
+
+fun String.nameLength():Int{
+    return this.length
 }
 
 private fun bmiTest() {
