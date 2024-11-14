@@ -5,8 +5,15 @@ class Hello {
 }
 
 fun main() {
+    val p = Person()
+    p.hello()
+
+
+
     println("Hello Kotlin!")
-    val age = 20
+    //Byte, Short, Int, Long
+    val age:Int = 20
+    val population:Long = 9999L
     println(age.inc())
     println(age)
     var name = "Hank"
