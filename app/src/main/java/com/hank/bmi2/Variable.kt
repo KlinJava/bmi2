@@ -10,9 +10,6 @@ fun main() {
     println(secret)
     println(bomb)
 
-
-
-
     //List
     val list = listOf<Int>(2,5,8) //immutable
     println(list)
@@ -24,8 +21,6 @@ fun main() {
     println("remote index1 in mulist: $mulist")
     mulist.set(1,88)
     println("replace index1 to mulist: $mulist")
-
-
 
 //    checknull()
 //    primitiveDataType()

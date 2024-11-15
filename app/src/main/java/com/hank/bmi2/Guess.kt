@@ -17,15 +17,27 @@ fun main() {
         val input = readLine()
         num = input?.toIntOrNull() ?: 0
         println("The number you entered：$num")
-        if (num < secret) {
+        val message = when {
+            num < secret -> "Bigger"
+            num > secret -> "Smaller"
+            else -> {
+                bingo = true
+                "You got it ,the number is $num" //要回傳的「放最後一行」
+            }
+        }
+        if (bingo) {
+            println(message)
+            break
+        }
+/*        if (num < secret) {
             println("Bigger")
         } else if(num > secret) {
             println("Smaller")
         } else {
-            println("Your got it.")
+            println("You got it.")
             bingo = true
             break // 給 for loop用
-        }
+        }*/
     }
     if (!bingo) println("沒猜中,the secret $secret")
 }
